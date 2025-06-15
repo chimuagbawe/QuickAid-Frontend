@@ -1,0 +1,109 @@
+:root {
+    --pink: #e91e63;
+    --gray: gray;
+    --white: white;
+    --github-border: #d1d9e0;
+}
+  
+body{
+    background-color: rgb(236, 236, 236);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5px;
+}
+nav{
+    background-color: var(--white);
+    padding: 14px 30px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(153, 152, 152, 0.1);
+}
+p{
+    margin: 0;
+}
+.first-section{
+ color: var(--gray);
+}
+.active{
+  color: black;
+}
+.online-builder{
+    border: 1px solid var(--pink);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--pink);
+    padding: 8px 15px;
+    margin: 0px 15px 0px 37px;
+    cursor: pointer;
+    font-size: bold;
+}
+.second-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-wrapper{
+    position: relative;
+    width: 200px;
+}
+.input-wrapper label{
+    position: absolute;
+    top: 26%;
+    left: 7%;
+    color: var(--gray);
+   transition: 0.2s;
+   pointer-events: none;
+}
+.input-wrapper input{
+    border: 1px solid #d2d6da;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;  
+}
+.input-wrapper input:focus{
+    border: 2px solid var(--pink);
+   outline: none;
+   transition: 0.15ms;
+   border-radius: 5px;
+   box-shadow: none;
+}
+.input-wrapper input:focus + label{
+   color: var(--pink);
+   top: -20%;
+   left: 7%;
+   font-size: 14px;
+   background-color: var(--white);
+ }
+ .github-button{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--github-border);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.github-star{
+  background-color: #e5eaee;
+  padding: 5px 12px;
+  font-size: 14px;
+}
+.github-star:hover{
+  background-color: #e5eaee98;
+}
+.github-number{
+  border-left: 1px solid var(--github-border);
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.nav-icons{
+  color: #737373;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+  margin-left: 20px;
+
+}
