@@ -5,18 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <!--Font Awesome CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
     <title>QuickAid Dashboard</title>
 </head>
 <body>
-</button>
 
-    <div>
+    <div class="overall">
         <nav>
-            <div class="first-section">
-                <p>Pages<span class="active"> / Dashboard</span></p>
+            <div class="logo-container">
+               <a href="#"><img src="assets/images/logo-ct-dark.png" width="26px" alt="QuickAid Logo"></a> 
+               <a href="#" class="logo-name">              
+                   Creative Tim
+               </a>
             </div>
-            <div class="second-section">
+
+            <ul class="nav-links">
+                <li class="active-nav"><a href="#"><i class="fa-solid fa-table-cells nav-icons"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fa-regular fa-square-check nav-icons"></i> Tables</a></li>
+                <li><a href="#"><i class="fa-regular fa-file-lines nav-icons"></i> Billing</a></li>
+                <li><a href="#"><i class="fa-solid fa-vr-cardboard nav-icons"></i> Virtual Reality</a></li>
+                <li><a href="#"><i class="fa-solid fa-language nav-icons"></i> RTL</a></li>
+                <li><a href="#"><i class="fa-regular fa-bell nav-icons"></i> Notifications</a></li>
+          
+                <p class="section-title">ACCOUNT PAGES</p>
+          
+                <li><a href="#"><i class="fa-regular fa-user nav-icons"></i> Profile</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket nav-icons"></i> Sign In</a></li>
+                <li><a href="#"><i class="fa-regular fa-clipboard nav-icons"></i> Sign Up</a></li>
+            </ul>
+
+            <div>
+                <button class="documentation">Documentation</button>
+                <button class="Upgrade-btn">Upgrade to pro</button>
+            </div>
+        </nav>
+
+        <header>
+            <section class="first-section">
+                <p>Pages<span class="active"> / Dashboard</span></p>
+            </section>
+            <section class="second-section">
                 <div class="input-wrapper">
                     <input type="text">
                     <label for="">Type here...</label>
@@ -26,22 +54,21 @@
                         Online Builder
                     </button>
                 </div>
-              <div class="github-button">
-                <div class="github-star">
-                    <i class="fa-regular fa-star"></i> Star
+                <div class="github-button">
+                    <div class="github-star">
+                        <i class="fa-regular fa-star"></i> Star
+                    </div>
+                    <div class="github-number">
+                        11,153
+                    </div>
                 </div>
-                <div class="github-number">
-                    11,153
+                <div class="header-icons">
+                    <i class="fa-solid fa-gear"></i>
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-regular fa-circle-user"></i> 
                 </div>
-              </div>
-              <div class="nav-icons">
-                <i class="fa-solid fa-gear"></i>
-                <i class="fa-regular fa-bell"></i>
-                <i class="fa-regular fa-circle-user"></i> 
-              </div>
-            </div>
-           
-        </nav>
+            </section>           
+        </header>
     </div>
 </body>
 </html>
