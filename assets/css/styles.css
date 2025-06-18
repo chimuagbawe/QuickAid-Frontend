@@ -1,27 +1,31 @@
 
 body{
-  background-color: rgb(236, 236, 236);
+  background-color: #f5f5f5;
   margin: 0;
   padding: 7px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;    
+  font-family: "Inter", sans-serif;  
+  font-size: 14px; 
+  height: 2000px;   
 }
-.overall{
+.layoutWrapper{
   display: flex;
-  background-color: rgb(236, 236, 236);
+  background-color: #f5f5f5;
   align-items: start;
   justify-content: space-between;
 }
-/* Header begins */
-header{
-  background-color: rgb(236, 236, 236);
-  padding: 8px 30px ;
+
+/* NavBar begins */
+
+nav{
+  background-color: #f5f5f5;
+  padding: 5px 30px ;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 15px;
   /* box-shadow: 0 4px 6px rgba(153, 152, 152, 0.1); */
   width: 980px;
+  margin-left: 230px;
 }
 .first-section{
   color: gray;
@@ -37,11 +41,11 @@ header{
 }
 .input-wrapper{
   position: relative;
-  width: 180px;
+  width: 190px;
 }
 .input-wrapper input{
   border: 1px solid #d2d6da;
-  height: 20px;
+  height: 17px;
   width: 100%;
   padding: 10px;
   border-radius: 7px;  
@@ -67,7 +71,7 @@ header{
   top: -12%;
   left: 7%;
   font-size: 12px;
-  background-color: rgb(236, 236, 236);
+  background-color: #f5f5f5;
   padding: 0px 5px;
 }
 .online-builder{
@@ -82,17 +86,23 @@ header{
 .github-button{
   display: flex;
   align-items: center;
-  border: 1.5px solid #d1d9e0;
+  border: 1px solid #d1d9e0;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.2s;
 }
 .github-star{
   background-color: #e5eaee;
-  padding: 5px 12px;
+  padding: 5px 10px;
+  font-size: 12px;
 }
 .github-star:hover{
   background-color: #e5eaee98;
+}
+.gt-star{
+  font-size: 14px;
+  line-height: 16px;
+  color: #25292e;
 }
 .github-number{
   border-left: 1px solid #d1d9e0;
@@ -102,7 +112,7 @@ header{
   line-height: 16px;
   background-color: white;
 }
-.header-icons{
+.nav-icons{
   color: #737373;
   display: flex;
   align-items: center;
@@ -111,8 +121,10 @@ header{
   margin-left: 20px;
   font-size: 15px;
 }
+
 /* Sidebar begins */
-nav{
+
+.Sidebar{
   height: 550px;
   width: 200px;
   background-color: white;
@@ -120,8 +132,11 @@ nav{
   flex-direction: column;
   border-radius: 10px;
   padding: 10px;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-nav a{
+.Sidebar a{
   text-decoration: none;
   color: black;
 }
@@ -136,7 +151,7 @@ nav a{
 .logo-name{
   margin-left: 10px;
 }
-.nav-links{
+.sidebar-links{
   list-style: none;
   padding: 0px;  
   height: 100%;
@@ -144,21 +159,25 @@ nav a{
   flex-direction: column;
   justify-content: space-between;
 }
-.nav-links li{
+.sidebar-links li{
   padding: 8px 12px;
   cursor: pointer;
   font-size: 12px;
+  border-radius: 5px;
+  transition: 0.2s;
 }
-.nav-links a{
+.sidebar-links li:hover{
+ background-color: #efeded;
+}
+.sidebar-links a{
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.active-nav{
+.active-sidebar{
   background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
-  border-radius: 5px;
 }
-.active-nav a{
+.active-sidebar a{
   color: white;
 }
 .documentation{
@@ -171,6 +190,10 @@ nav a{
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
+  transition: 0.2s;
+}
+.documentation:hover{
+ color: rgb(99, 99, 99);
 }
 .Upgrade-btn{
   width: 100%;
@@ -184,7 +207,7 @@ nav a{
   font-weight: 500;
   font-size: 14px;
 }
-.nav-icons{
+.sidebar-icons{
   color: gray;
   font-size: 15px;
 }
@@ -195,4 +218,18 @@ nav a{
   margin: 16px 0px 8px 0px;
   font-size: 12px;
   line-height: 1.25;
+}
+.dashboard-intro{
+  margin-left: 260px;
+}
+.intro-title{
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  margin: 15px 0px 5px 0px;
+}
+.intro-subtext{
+  margin: 0px;
+  color: #737373;
+  font-size: 16px;
 }
