@@ -45,24 +45,26 @@
             
         </nav>
         <aside class="Sidebar">
-            <div class="logo-container">
-                <a href="#"><img src="assets/images/logo-ct-dark.png" width="26px" alt="QuickAid Logo"></a> 
-                <a href="#" class="logo-name">              
-                    Creative Tim
-                </a>
+            <div class="top-sidebar">
+                <div class="logo-container">
+                    <a href="#"><img src="assets/images/logo-ct-dark.png" width="26px" alt="QuickAid Logo"></a> 
+                    <a href="#" class="logo-name">              
+                        Creative Tim
+                    </a>
+                </div>
+                <ul class="sidebar-links">
+                    <li class="active-sidebar"><a href="#"><i class="fa-solid fa-table-cells sidebar-icons"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fa-regular fa-square-check sidebar-icons"></i> Tables</a></li>
+                    <li><a href="#"><i class="fa-regular fa-file-lines sidebar-icons"></i> Billing</a></li>
+                    <li><a href="#"><i class="fa-solid fa-vr-cardboard sidebar-icons"></i> Virtual Reality</a></li>
+                    <li><a href="#"><i class="fa-solid fa-language sidebar-icons"></i> RTL</a></li>
+                    <li><a href="#"><i class="fa-regular fa-bell sidebar-icons"></i> Notifications</a></li>          
+                    <p class="section-title">ACCOUNT PAGES</p>
+                    <li><a href="#"><i class="fa-regular fa-user sidebar-icons"></i> Profile</a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-to-bracket sidebar-icons"></i> Sign In</a></li>
+                    <li><a href="#"><i class="fa-regular fa-clipboard sidebar-icons"></i> Sign Up</a></li>
+                </ul>
             </div>
-            <ul class="sidebar-links">
-                <li class="active-sidebar"><a href="#"><i class="fa-solid fa-table-cells sidebar-icons"></i>Dashboard</a></li>
-                <li><a href="#"><i class="fa-regular fa-square-check sidebar-icons"></i> Tables</a></li>
-                <li><a href="#"><i class="fa-regular fa-file-lines sidebar-icons"></i> Billing</a></li>
-                <li><a href="#"><i class="fa-solid fa-vr-cardboard sidebar-icons"></i> Virtual Reality</a></li>
-                <li><a href="#"><i class="fa-solid fa-language sidebar-icons"></i> RTL</a></li>
-                <li><a href="#"><i class="fa-regular fa-bell sidebar-icons"></i> Notifications</a></li>          
-                <p class="section-title">ACCOUNT PAGES</p>
-                <li><a href="#"><i class="fa-regular fa-user sidebar-icons"></i> Profile</a></li>
-                <li><a href="#"><i class="fa-solid fa-right-to-bracket sidebar-icons"></i> Sign In</a></li>
-                <li><a href="#"><i class="fa-regular fa-clipboard sidebar-icons"></i> Sign Up</a></li>
-            </ul>
             <div>
                 <button class="documentation">Documentation</button>
                 <button class="Upgrade-btn">Upgrade to pro</button>
@@ -74,7 +76,97 @@
         <h3 class="intro-title">Dashboard</h3>
         <p class="intro-subtext">Check the sales, value and bounce rate by country.</p>
     </div>
-      
-   
+
+    <div class="dashboard">
+        <div class="performance-overview">
+            <div class="metric-card">
+                <div class="top-card">
+                    <div class="metric-text">
+                        <p class="metric-subtext">Today's Money</p>
+                        <p class="metric-figure">$53K</p>
+                    </div>
+                    <div class="metric-icon">
+                        <i class="fa-regular fa-file-lines sidebar-icons"></i>
+                    </div>
+                </div>
+                <div class="bottom-card">
+                    <p><span class="positive-metric-percentage">+55%</span> than last week</p>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="top-card">
+                    <div class="metric-text">
+                        <p class="metric-subtext">Today's Users</p>
+                        <p class="metric-figure">2,300</p>
+                    </div>
+                    <div class="metric-icon">
+                        <i class="fa-regular fa-user sidebar-icons"></i>
+                    </div>
+                </div>
+                <div class="bottom-card">
+                    <p><span class="positive-metric-percentage">+3%</span> than last week</p>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="top-card">
+                    <div class="metric-text">
+                        <p class="metric-subtext">Ads Views</p>
+                        <p class="metric-figure">3,462</p>
+                    </div>
+                    <div class="metric-icon">
+                        <i class="fa-regular fa-clipboard sidebar-icons"></i>
+                    </div>
+                </div>
+                <div class="bottom-card">
+                    <p><span class="negative-metric-percentage">-2%</span> than last week</p>
+                </div>
+            </div>
+            <div class="metric-card" style="margin: 0px;">
+                <div class="top-card">
+                    <div class="metric-text">
+                        <p class="metric-subtext">Sales</p>
+                        <p class="metric-figure">$103,430</p>
+                    </div>
+                    <div class="metric-icon">
+                        <i class="fa-regular fa-square-check sidebar-icons"></i>
+                    </div>
+                </div>
+                <div class="bottom-card">
+                    <p><span class="positive-metric-percentage">+5%</span> than yesterday</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart-card">
+                <div class="top-card">
+                    <p class="chart-text">Website Views</p>
+                    <p class="info">Last Campaign Performance</p>
+                    <canvas id="viewsChart" width="292" height="150"></canvas>
+                </div>
+                <div class="bottom-card"><i class="fas fa-clock"></i> campaign sent 2 days ago</div>
+            </div>
+            <div class="chart-card">
+                <div class="top-card">
+                    <p class="chart-text">Daily Sales</p>
+                    <p class="info"><span class="chart-percentage">(+15%)</span> increase in today sales</p>
+                    <canvas id="salesChart" width="292" height="150"></canvas>
+                </div>
+                <div class="bottom-card"><i class="fas fa-clock"></i> updated 4 min ago </div>
+            </div>
+            <div class="chart-card" style="margin: 0px;">
+                <div class="top-card">
+                    <p class="chart-text">Completed Tasks</p>
+                    <p class="info">Last Campaign Performance</p>
+                    <canvas id="tasksChart" width="292" height="150"></canvas>
+                </div>
+                <div class="bottom-card"><i class="fas fa-clock"></i> just updated</div>
+            </div>
+         
+        </div>
+    </div>  
+
+<script src="assets/node_modules/chart.js/dist/chart.umd.min.js"></script>
+<script src="assets/Js/chart.js"></script>
 </body>
 </html>
