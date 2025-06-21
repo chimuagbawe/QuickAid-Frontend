@@ -7,7 +7,8 @@ new Chart(viewsCtx, {
         datasets: [{
             label: 'Views',
             data: [50, 45, 20, 30, 50, 60, 80],
-            backgroundColor: '#4CAF50'
+            backgroundColor: '#129f16',
+            borderRadius: 3
         }]
     },
     options: {
@@ -29,7 +30,7 @@ new Chart(salesCtx, {
         datasets: [{
             label: 'Sales',
             data: [150, 120, 430, 260, 350, 300, 250, 180, 300, 320, 210, 220],
-            borderColor: '#4CAF50',
+            borderColor: '#129f16',
             fill: false
         }]
     },
@@ -52,7 +53,7 @@ new Chart(tasksCtx, {
         datasets: [{
             label: 'Tasks',
             data: [50, 300, 450, 400, 470],
-            borderColor: '#4CAF50',
+            borderColor: '#129f16',
             fill: false
         }]
     },
